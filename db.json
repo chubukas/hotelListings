@@ -1,0 +1,36 @@
+{
+    "newuser": [
+        {
+            "name": "",
+            "password": "",
+            "email": "",
+            "isDeleted": false
+        }
+    ],
+    "hotels": [
+        {
+            "hotelName": "",
+            "hotelAddress": "",
+            "pictures": [
+                {
+                    "picture1": "",
+                    "picture2": "",
+                    "picture3": ""
+                }
+            ],
+            "hotelInformation": [
+                {
+                    "facility": [],
+                    "about": "",
+                    "bookings": [
+                        {
+                            "checkInDate": "",
+                            "ckeckOutDate": "",
+                            "free": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

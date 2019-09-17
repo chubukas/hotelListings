@@ -136,3 +136,38 @@
 .popular-first-row {
   margin-bottom: 30px;
 }
+
+#loginmodal {
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.692);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+#registermodal {
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.692);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+#registerlink {
+  color: blue;
+  cursor: pointer;
+}
