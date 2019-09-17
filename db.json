@@ -1,14 +1,24 @@
 {
     "newuser": [
         {
-            "name": "",
-            "password": "",
-            "email": "",
-            "isDeleted": false
+            "name": "Chukwuebuka Anyadiegwu",
+            "password": "12345",
+            "email": "chubukass@gmail.com",
+            "isDeleted": "false",
+            "id": 5
+        },
+        {
+            "name": "daile",
+            "password": "12345",
+            "email": "chu@gmail.com",
+            "isDeleted": "false",
+            "id": 6
         }
     ],
     "hotels": [
         {
+            "id": 1,
+            "hotelid": "",
             "hotelName": "",
             "hotelAddress": "",
             "pictures": [
@@ -21,16 +31,18 @@
             "hotelInformation": [
                 {
                     "facility": [],
-                    "about": "",
-                    "bookings": [
-                        {
-                            "checkInDate": "",
-                            "ckeckOutDate": "",
-                            "free": true
-                        }
-                    ]
+                    "about": ""
                 }
             ]
+        }
+    ],
+    "bookings": [
+        {
+            "id": 1,
+            "hotelid": "",
+            "checkInDate": "",
+            "ckeckOutDate": "",
+            "free": true
         }
     ]
 }

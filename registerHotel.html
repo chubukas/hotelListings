@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>yourhotels.com</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="registeredUser">
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container ">
+          <a class="navbar-brand logo" href="">
+            yourhotels.com
+          </a>
+
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pt-2 px-2" id="call">
+                <i class="fas fa-phone-square"></i>
+                call us : +2348066702567
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--END OF HEADER-->
+
+    <section class="resgisterForm">
+      <h3>INPUT HOTEL DETAILS HERE</h3>
+      <form id="hotelForm">
+        <div class="form-group">
+          <label for="hotelname">Hotel Name : </label>
+          <input type="text" class="form-control" name="" id="hotelname" />
+        </div>
+        <div class="form-group">
+          <label for="hoteladdress">Hotel Address : </label>
+          <input type="text" class="form-control" name="" id="hotelname" />
+        </div>
+        <div class="form-group">
+          <label for="aboutthehotel ">About The Hotel : </label>
+          <textarea
+            name=""
+            class="form-control"
+            id="aboutthehotel "
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="Hotelfacilities">Hotel Facilities : </label>
+          <small class="form-text text-muted">
+            You can select more than one</small
+          >
+          <select multiple class="form-control" name="" id="Hotelfacilities">
+            <option value="Bar/Lounge">Bar/Lounge</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Security">Security</option>
+            <option value="Wireless Internet">Wireless Internet</option>
+            <option value="Luggage Storage">Luggage Storage</option>
+            <option value="Air Conditioning">Air Conditioning</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pictures">Hotel Pictures : </label>
+          <input multiple type="file" name="" id="pictures" />
+          <small class="form-text text-muted">
+            Select not more than three pictures</small
+          >
+        </div>
+        <button class="btn btn-success" type="submit">
+          <i class="fas fa-message"></i> Send
+        </button>
+      </form>
+    </section>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
