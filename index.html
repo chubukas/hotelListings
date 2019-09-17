@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>yourhotels.com</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container ">
+          <a class="navbar-brand logo" href="">
+            yourhotels.com
+          </a>
+
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pt-2 px-2" id="call">
+                <i class="fas fa-phone-square"></i>
+                call us : +2348066702567
+              </li>
+              <li class="nav-item dropdown ml-2">
+                <a
+                  class="nav-link dropdown-toggle "
+                  id="downlink"
+                  role="button"
+                  data-toggle="dropdown"
+                  href=""
+                  ><i class="fas fa-user-circle pr-2"></i>Account
+                </a>
+                <div class="dropdown-menu px-1 bg-warning register">
+                  <p>Sign in to have full access</p>
+                  <button
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#loginmodal"
+                  >
+                    sign in
+                  </button>
+
+                  <div id="loginmodal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">login your details</h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismis="modal"
+                          >
+                            &times;
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-row align-items-center">
+                              <div class="col my-1">
+                                <label for="email">Email</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepared">
+                                    <div class="input-group-text">@</div>
+                                  </div>
+                                  <input type="email" name="" id="" />
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>New Here? <a href="">Sign up</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="hero-bg">
+      <div class="container-fluid hero-text ">
+        <h2>
+          Find and book hotels in Nigeria.
+        </h2>
+        <h3>
+          Search through all the hotels in Nigeria
+        </h3>
+      </div>
+    </section>
+    <section class="filter-search">
+      <div class="container">
+        <form class="filter-form">
+          <div class="form-row">
+            <div class="col">
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id=""
+                placeholder="Search for a city or particular hotel"
+              />
+            </div>
+            <div class="col">
+              <input
+                class="form-control"
+                type="date"
+                name=""
+                id=""
+                placeholder="Search for a city or particular hotel"
+              />
+            </div>
+            <div class="col">
+              <input
+                class="form-control"
+                type="date"
+                name=""
+                id=""
+                placeholder="Search for a city or particular hotel"
+              />
+            </div>
+            <button class="btn btn-warning">search hotels</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--UNDER FORM SECTION-->
+    <section class="container mt-5">
+      <div class="container under-form">
+        <h4>Suggested Destinations</h4>
+        <p>See our top pick of cities visited by most guests</p>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning state-button">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning">
+              <h5>Port Harcourt</h5>
+              23 hotels
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--DEAL OF THE DAY SECTION-->
+      <div class="container">
+        <div class="top-deals">
+          <h4>Today's Top Deals</h4>
+          <p>A quick view of hotels offering the best deals</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img" src="./pictures/bg.jpg" alt="" />
+              <div class="card-img-overlay">
+                <p class="overlay-price">45%<i>off</i></p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a class="card-link" href="">hotel name</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img" src="./pictures/bg.jpg" alt="" />
+              <div class="card-img-overlay">
+                <p class="overlay-price">45%<i>off</i></p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a class="card-link" href="">hotel name</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img" src="./pictures/bg.jpg" alt="" />
+              <div class="card-img-overlay">
+                <p class="overlay-price">45% <i>off</i></p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a class="card-link" href="">hotel name</a>
+            </div>
+          </div>
+        </div>
+        <!--POPULAR CITIES SECTION-->
+        <div class="Popular-cities">
+          <h4>Popular cities with yourhotels.com travellers</h4>
+          <p>See the top destinations people are traveling to</p>
+        </div>
+        <div class="row popular-first-row">
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="overlay-hover" href="">
+              <div class="card  popular-img">
+                <img class="card-img" src="./pictures/bg.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <p class="overlay-state">Lagos</p>
+                  <div class="overlay-popup">
+                    <button class="btn btn-outline-warning">
+                      Book Hotels in Lagos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

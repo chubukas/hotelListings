@@ -1,0 +1,14 @@
+{
+  "name": "yourhostels",
+  "version": "1.0.0",
+  "description": "A site for all the hostels in the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chukwuebuka",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
+}
