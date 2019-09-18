@@ -14,7 +14,7 @@
     <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container ">
-          <a class="navbar-brand logo" href="">
+          <a class="navbar-brand logo" href="index.html">
             yourhotels.com
           </a>
 
@@ -42,12 +42,15 @@
                   href=""
                   ><i class="fas fa-user-circle pr-2"></i>Account
                 </a>
-                <div class="dropdown-menu px-1 bg-warning register" id="dropdown-menu">
+                <div
+                  class="dropdown-menu px-1 bg-warning register"
+                  id="dropdown-menu"
+                >
                   <p>Sign in to have full access</p>
                   <button class="btn btn-primary" id="signinBtn">
                     sign in
                   </button>
-                  
+
                   <!--MODAL SECTION START-->
                   <div id="loginmodal">
                     <div class="modal-header">
@@ -65,32 +68,48 @@
                               <div class="input-group-prepared">
                                 <div class="input-group-text">@</div>
                               </div>
-                              <input type="email" class="form-control" name="" id="signEmail" placeholder="Email" />
+                              <input
+                                type="email"
+                                class="form-control"
+                                name=""
+                                id="signEmail"
+                                placeholder="Email"
+                              />
                             </div>
                           </div>
                           <div class="col my-1">
                             <!-- <label for="email">Email</label> -->
                             <div class="input-group">
                               <div class="input-group-prepared">
-                                <div class="input-group-text"><i class="fas fa-key"></i></div>
+                                <div class="input-group-text">
+                                  <i class="fas fa-key"></i>
+                                </div>
                               </div>
-                              <input type="password" class="form-control" name="" id="signPassword" placeholder="password" />
+                              <input
+                                type="password"
+                                class="form-control"
+                                name=""
+                                id="signPassword"
+                                placeholder="password"
+                              />
                             </div>
                           </div>
                           <div class="col-auto my-1">
-                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-primary" type="submit">
+                              Submit
+                            </button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
 
-
-
-
                   <!--REGISTER MODAL SECTION-->
 
-                  <p>New Here? <a id="registerlink">Sign up</a> <i class="fas fa-edit"></i></p>
+                  <p>
+                    New Here? <a id="registerlink">Sign up</a>
+                    <i class="fas fa-edit"></i>
+                  </p>
 
                   <div id="registermodal">
                     <div class="modal-header">
@@ -103,34 +122,58 @@
                       <form id="signForm">
                         <div class="form-row align-items-center">
                           <div class="col my-1">
-                              <!-- <label for="email">Email</label> -->
-                              <div class="input-group">
-                                <div class="input-group-prepared">
-                                  <div class="input-group-text"><i class="fas fa-user-circle"></i></div>
+                            <!-- <label for="email">Email</label> -->
+                            <div class="input-group">
+                              <div class="input-group-prepared">
+                                <div class="input-group-text">
+                                  <i class="fas fa-user-circle"></i>
                                 </div>
-                                <input type="text" class="form-control" name="" id="registerName" placeholder="Name" />
                               </div>
+                              <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id="registerName"
+                                placeholder="Name"
+                              />
                             </div>
+                          </div>
                           <div class="col my-1">
                             <!-- <label for="email">Email</label> -->
                             <div class="input-group">
                               <div class="input-group-prepared">
                                 <div class="input-group-text">@</div>
                               </div>
-                              <input type="email" class="form-control" name="email" id="registerEmail" placeholder="Email" />
+                              <input
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                id="registerEmail"
+                                placeholder="Email"
+                              />
                             </div>
                           </div>
                           <div class="col my-1">
                             <!-- <label for="email">Email</label> -->
                             <div class="input-group">
                               <div class="input-group-prepared">
-                                <div class="input-group-text"><i class="fas fa-key"></i></div>
+                                <div class="input-group-text">
+                                  <i class="fas fa-key"></i>
+                                </div>
                               </div>
-                              <input type="password" class="form-control" name="" id="registerPassword" placeholder="password" />
+                              <input
+                                type="password"
+                                class="form-control"
+                                name=""
+                                id="registerPassword"
+                                placeholder="password"
+                              />
                             </div>
                           </div>
                           <div class="col-auto my-1">
-                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-primary" type="submit">
+                              Submit
+                            </button>
                           </div>
                         </div>
                       </form>
@@ -139,7 +182,6 @@
                 </div>
               </li>
             </ul>
-
           </div>
         </div>
       </nav>
@@ -241,7 +283,6 @@
           </div>
         </div>
       </div>
-<div id="come"></div>
 
       <!--DEAL OF THE DAY SECTION-->
       <div class="container">
@@ -249,48 +290,15 @@
           <h4>Today's Top Deals</h4>
           <p>A quick view of hotels offering the best deals</p>
         </div>
-        <div class="row" id="deals">
-          <!-- <div class="col-md-4">
-            <div class="card">
-              <img class="card-img deal" src="./pictures/hotel1.jpg" alt="" />
-              <div class="card-img-overlay">
-                <p class="overlay-price">45%<i>off</i></p>
-              </div>
-            </div>
-            <div class="card-body">
-              <a class="card-link" href="">hotel name</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img deal" src="./pictures/bg.jpg" alt="" />
-              <div class="card-img-overlay">
-                <p class="overlay-price">45%<i>off</i></p>
-              </div>
-            </div>
-            <div class="card-body">
-              <a class="card-link" href="">hotel name</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img deal" src="./pictures/bg.jpg" alt="" />
-              <div class="card-img-overlay">
-                <p class="overlay-price">45% <i>off</i></p>
-              </div>
-            </div>
-            <div class="card-body">
-              <a class="card-link" href="">hotel name</a>
-            </div>
-          </div> -->
-        </div>
+        <div class="row" id="deals"></div>
         <!--POPULAR CITIES SECTION-->
         <div class="Popular-cities">
           <h4>Popular Hotels with yourhotels.com travellers</h4>
           <p>See the top Hotels people are visits</p>
         </div>
-        <div class="row popular-first-row" id="popular-first-row">
-          <!-- <div class="col-md-4">
+        <div class="row popular-first-row" id="popular-first-row"></div>
+        <!-- <div class="row" id="popular-second-row"> -->
+        <!-- <div class="col-md-4">
             <a class="overlay-hover" href="">
               <div class="card  popular-img">
                 <img class="card-img" src="./pictures/bg.jpg" alt="" />
@@ -335,54 +343,7 @@
               </div>
             </a>
           </div> -->
-        </div>
-        <div class="row" id="popular-second-row">
-          <!-- <div class="col-md-4">
-            <a class="overlay-hover" href="">
-              <div class="card  popular-img">
-                <img class="card-img" src="./pictures/bg.jpg" alt="" />
-                <div class="card-img-overlay">
-                  <p class="overlay-state">Lagos</p>
-                  <div class="overlay-popup">
-                    <button class="btn btn-outline-warning">
-                      Book Hotels in Lagos
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a class="overlay-hover" href="">
-              <div class="card  popular-img">
-                <img class="card-img" src="./pictures/bg.jpg" alt="" />
-                <div class="card-img-overlay">
-                  <p class="overlay-state">Lagos</p>
-                  <div class="overlay-popup">
-                    <button class="btn btn-outline-warning">
-                      Book Hotels in Lagos
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a class="overlay-hover" href="">
-              <div class="card  popular-img">
-                <img class="card-img" src="./pictures/bg.jpg" alt="" />
-                <div class="card-img-overlay">
-                  <p class="overlay-state">Lagos</p>
-                  <div class="overlay-popup">
-                    <button class="btn btn-outline-warning">
-                      Book Hotels in Lagos
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div> -->
-        </div>
+        <!-- </div> -->
       </div>
     </section>
 

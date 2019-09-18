@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>yourhotels.com</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container ">
+          <a class="navbar-brand logo" href="index.html">
+            yourhotels.com
+          </a>
+
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pt-2 px-2" id="call">
+                <i class="fas fa-phone-square"></i>
+                call us : +2348066702567
+              </li>
+              <li class="nav-item dropdown ml-2">
+                <a
+                  class="nav-link dropdown-toggle "
+                  id="downlink"
+                  role="button"
+                  data-toggle="dropdown"
+                  href=""
+                  ><i class="fas fa-user-circle pr-2"></i>Account
+                </a>
+                <div class="dropdown-menu px-1 bg-warning register" id="dropdown-menu">
+                  <p>Sign in to have full access</p>
+                  <button class="btn btn-primary" id="signinBtn">
+                    sign in
+                  </button>
+                  
+                  <!--MODAL SECTION START-->
+                  <div id="loginmodal">
+                    <div class="modal-header">
+                      <h5 class="modal-title">login your details</h5>
+                      <button type="button" class="close" data-dismis="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="loginForm">
+                        <div class="form-row align-items-center">
+                          <div class="col my-1">
+                            <!-- <label for="email">Email</label> -->
+                            <div class="input-group">
+                              <div class="input-group-prepared">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="email" class="form-control" name="" id="signEmail" placeholder="Email" />
+                            </div>
+                          </div>
+                          <div class="col my-1">
+                            <!-- <label for="email">Email</label> -->
+                            <div class="input-group">
+                              <div class="input-group-prepared">
+                                <div class="input-group-text"><i class="fas fa-key"></i></div>
+                              </div>
+                              <input type="password" class="form-control" name="" id="signPassword" placeholder="password" />
+                            </div>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+
+
+
+                  <!--REGISTER MODAL SECTION-->
+
+                  <p>New Here? <a id="registerlink">Sign up</a> <i class="fas fa-edit"></i></p>
+
+                  <div id="registermodal">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Please Register</h5>
+                      <button type="button" class="close" data-dismis="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="signForm">
+                        <div class="form-row align-items-center">
+                          <div class="col my-1">
+                              <!-- <label for="email">Email</label> -->
+                              <div class="input-group">
+                                <div class="input-group-prepared">
+                                  <div class="input-group-text"><i class="fas fa-user-circle"></i></div>
+                                </div>
+                                <input type="text" class="form-control" name="" id="registerName" placeholder="Name" />
+                              </div>
+                            </div>
+                          <div class="col my-1">
+                            <!-- <label for="email">Email</label> -->
+                            <div class="input-group">
+                              <div class="input-group-prepared">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="email" class="form-control" name="email" id="registerEmail" placeholder="Email" />
+                            </div>
+                          </div>
+                          <div class="col my-1">
+                            <!-- <label for="email">Email</label> -->
+                            <div class="input-group">
+                              <div class="input-group-prepared">
+                                <div class="input-group-text"><i class="fas fa-key"></i></div>
+                              </div>
+                              <input type="password" class="form-control" name="" id="registerPassword" placeholder="password" />
+                            </div>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--END OF HEADER-->
+
+    </body>
+    </html>

@@ -53,6 +53,9 @@ $(document).ready(function() {
     let pics = $("#hotelpictures").val();
     let hotelInformation = $("#Hotelfacilities").val();
     let about = $.trim($("#aboutthehotel").val());
+    let price = $.trim($("#hotelprice").val());
+    let hotelarea = $.trim($("#hotelarea").val());
+    let hotelstate = $.trim($("#hotelstate").val());
     let hotelid = Math.floor(Math.random() * 1000000)
       .toString()
       .concat("yht");
@@ -65,6 +68,9 @@ $(document).ready(function() {
       hotelid,
       hotelName,
       hotelAddress,
+      hotelarea,
+      hotelstate,
+      price,
       picture1,
       picture2,
       picture3,
