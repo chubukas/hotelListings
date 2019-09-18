@@ -6,17 +6,13 @@ const loginServer = (link, input) => {
       console.log(result);
       for (let index = 0; index < result.length; index++) {
         const element = result[index];
-        console.log(element.email);
-        console.log(element.password);
 
         if (
           element.email == input.email &&
           element.password == input.password
         ) {
           alert(`Welcome ${element.name}`);
-            let registeredUser = document.getElementById("registeredUser");
-            
-          document.location = "../registerHotel.html";
+          document.location = "../registerHotel.html?name=" + element.name;
         } else {
           alert(`Incorrect Password Or Email`);
           input.password = " ";
