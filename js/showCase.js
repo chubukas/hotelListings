@@ -1,26 +1,52 @@
-const showServer = (link, come) => {
+const showServer = (link, rowDeals, rowOne, rowTwo) => {
   $.ajax({
     method: "GET",
     url: link,
     success: function(result) {
-      //   console.log(result);
-      for (let index = 0; index < result.length; index++) {
-        const element = result[index];
-        // console.log(element);
-        // for (k in element) {
-        //   console.log(element[k]);
-        // }
+      let myData = "";
+      let allData = "";
+      let resverse = result.reverse();
 
-        for (let i = 0; i < element.length; i++) {
-          const e = element[i];
-          console.log(element[e]);
-        }
+      for (const key in result) {
+        const element = result[key];
 
-        let deal = document.querySelectorAll(".deal");
+        myData += `<div class="col-md-4">
+        <div class='card'>
+          <img class="card-img deal" src="${element.picture1}" alt="" />
+          <div class="card-img-overlay">
+            "<p class="overlay-price">45%<i>off</i></p>
+          </div>
+        </div>
+        <div class="card-body">
+          <a class="card-link" href="">${element.hotelName}</a>
+        </div>
+        </div>`;
+        rowDeals.html(myData);
 
-        // for (let index = 0; index < deal.length; index++) {
-        //   const dealts = deal[index];
-        // }
+        allData += `<div class="col-md-4">
+        <div class='card'>
+          <img class="card-img deal" src="${element.picture1}" alt="" />
+        </div>
+        <div class="card-body">
+          <a class="card-link" href="">${element.hotelName}</a>
+        </div>
+        </div>`;
+
+        rowOne.html(allData);
+      }
+      let itemTwo = "";
+      for (const key in resverse) {
+        const item = resverse[key];
+        console.log(item);
+        itemTwo += `<div class="col-md-4">
+        <div class='card'>
+          <img class="card-img deal" src="${item.picture1}" alt="" />
+        </div>
+        <div class="card-body">
+          <a class="card-link" href="">${item.hotelName}</a>
+        </div>
+        </div>`;
+        rowTwo.html(itemTwo);
       }
     },
     error: function(error) {
@@ -30,20 +56,12 @@ const showServer = (link, come) => {
 };
 
 $(document).ready(function() {
-  //   $("#loginForm").on("submit", function(e) {
+  let rowDeals = $("#deals");
+  let rowOne = $("#popular-first-row");
+  let rowTwo = $("popular-second-row");
 
-  // let email = document.getElementById("signEmail").value;
-  // let password = document.getElementById("signPassword").value;
-  var come = $("#come");
-  come.text = "we gooing";
   const link = "http://localhost:3000/hotels";
 
-  // const input = {
-  //   password,
-  //   email
-  // };
-  //   let deal = document.querySelectorAll(".deal");
-
-  showServer(link, come);
+  showServer(link, rowDeals, rowOne, rowTwo);
 });
 // });

@@ -14,7 +14,7 @@ const postServers = (link, data) => {
   });
 };
 
-// const loginServers = input => {
+// function loginServers (input) {
 //   $.ajax({
 //     method: "GET",
 //     url: "http://localhost:3000/hotels",
@@ -51,31 +51,25 @@ $(document).ready(function() {
     let hotelName = document.getElementById("hotelname").value;
     let hotelAddress = document.getElementById("hoteladdress").value;
     let pics = $("#hotelpictures").val();
-    let facility = $("#Hotelfacilities").val();
+    let hotelInformation = $("#Hotelfacilities").val();
     let about = $.trim($("#aboutthehotel").val());
     let hotelid = Math.floor(Math.random() * 1000000)
       .toString()
       .concat("yht");
 
-    // hotelid = loginServers(hotelid);
-    // console.log(`this hostelid ${hotelid}`);
-
-    // let pictures = pics.reduce((total, cur, index) => {
-    //   total = `picture${[index]} : ${cur}`;
-    //   return cur;
-    // }, {});
-
     let picture1 = pics[0];
     let picture2 = pics[1];
     let picture3 = pics[2];
-    let pictures = { picture1, picture2, picture3 };
-    // console.log(pictures);
+
     const data = {
       hotelid,
       hotelName,
       hotelAddress,
-      pictures,
-      hotelInformation: { facility, about }
+      picture1,
+      picture2,
+      picture3,
+      hotelInformation,
+      aboutHotel: about
     };
 
     const link = "http://localhost:3000/hotels";

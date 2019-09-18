@@ -81,16 +81,16 @@
             Select not more than three pictures</small
           >
           <select multiple class="form-control" name="" id="hotelpictures">
-            <option value="./pictures/hotel1">picture1</option>
-            <option value="./pictures/hotel2">picture2</option>
-            <option value="./pictures/hotel3">picture3</option>
-            <option value="./pictures/hotel4">picture4</option>
-            <option value="./pictures/hotel5">picture5</option>
-            <option value="./pictures/hotel6">picture6</option>
-            <option value="./pictures/hotel7">picture7</option>
-            <option value="./pictures/hotel8">picture8</option>
-            <option value="./pictures/hotel9">picture9</option>
-            <option value="./pictures/hotel10">picture10</option>
+            <option value="./pictures/hotel1.jpg">picture1</option>
+            <option value="./pictures/images2.jpg">picture2</option>
+            <option value="./pictures/images3.jpg">picture3</option>
+            <option value="./pictures/images4.jpg">picture4</option>
+            <option value="./pictures/images5.jpg">picture5</option>
+            <option value="./pictures/images6.jpg">picture6</option>
+            <option value="./pictures/images7.jpg">picture7</option>
+            <option value="./pictures/images8.jpg">picture8</option>
+            <option value="./pictures/images9.jpg">picture9</option>
+            <option value="./pictures/images10.jpg">picture10</option>
           </select>
         </div>
         <button class="btn btn-success" type="submit">
@@ -109,12 +109,16 @@
       let name = split.slice(inde + 1, index).join("");
 
       registeredUser.innerHTML = `Welcome ${name}`;
+
+      if (url == "") {
+        document.location = "index.html";
+      }
     </script>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/login.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
     <script src="./js/hotel.js"></script>
   </body>
 </html>
