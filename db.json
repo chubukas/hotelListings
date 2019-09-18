@@ -1,117 +1,112 @@
 {
-  "newuser": [
-    {
-      "name": "Chukwuebuka Anyadiegwu",
-      "password": "12345",
-      "email": "chubukass@gmail.com",
-      "isDeleted": "false",
-      "id": 5
-    },
-    {
-      "name": "daile",
-      "password": "12345",
-      "email": "chu@gmail.com",
-      "isDeleted": "false",
-      "id": 6
-    }
-  ],
-  "hotels": [
-    {
-      "hotelid": "242349yht",
-      "hotelName": "good",
-      "hotelAddress": "No 11 church street Housing estate",
-      "hotelarea": "Enugu",
-      "hotelstate": "Enugu",
-      "price": 25000,
-      "picture1": "./pictures/hotel1.jpg",
-      "picture2": "./pictures/images3.jpg",
-      "hotelInformation[]": [
-        "Bar/Lounge",
-        "Security"
-      ],
-      "aboutHotel": "it is good",
-      "id": 2
-    },
-    {
-      "hotelid": "84598yht",
-      "hotelName": "looking",
-      "hotelAddress": "No 11 church street Housing estate",
-      "hotelarea": "Enugu",
-      "hotelstate": "Enugu",
-      "price": 35000,
-      "picture1": "./pictures/images3.jpg",
-      "picture2": "./pictures/hotel1.jpg",
-      "picture3": "./pictures/images4.jpg",
-      "hotelInformation[]": [
-        "Bar/Lounge",
-        "Restaurant",
-        "Security",
-        "Wireless Internet"
-      ],
-      "aboutHotel": "great",
-      "id": 3
-    },
-    {
-      "hotelid": "438746yht",
-      "hotelName": "geat",
-      "hotelAddress": "Ada George, Portharcourt, River State, Ada George",
-      "hotelarea": "Portharcourt",
-      "hotelstate": "River State",
-      "price": 45000,
-      "picture1": "./pictures/images7.jpg",
-      "picture2": "./pictures/images8.jpg",
-      "picture3": "./pictures/images10.jpg",
-      "hotelInformation[]": [
-        "Bar/Lounge",
-        "Security",
-        "Wireless Internet"
-      ],
-      "aboutHotel": "ok",
-      "id": 4
-    },
-    {
-      "hotelid": "683636yht",
-      "hotelName": "came",
-      "hotelAddress": "adddress",
-      "hotelarea": "lekki",
-      "hotelstate": "Lagos",
-      "picture1": "./pictures/images4.jpg",
-      "picture2": "./pictures/images6.jpg",
-      "picture3": "./pictures/images9.jpg",
-      "hotelInformation[]": [
-        "Security",
-        "Wireless Internet",
-        "Air Conditioning"
-      ],
-      "aboutHotel": "it has been awauo",
-      "id": 5
-    },
-    {
-      "hotelid": "187568yht",
-      "hotelName": "angle hotel",
-      "hotelAddress": "11 ada loove",
-      "hotelarea": "isolo",
-      "hotelstate": "lagos",
-      "price": "1500",
-      "picture1": "./pictures/hotel1.jpg",
-      "picture2": "./pictures/images4.jpg",
-      "picture3": "./pictures/images7.jpg",
-      "hotelInformation[]": [
-        "Bar/Lounge",
-        "Restaurant",
-        "Wireless Internet"
-      ],
-      "aboutHotel": "it has been good",
-      "id": 6
-    }
-  ],
-  "bookings": [
-    {
-      "id": 1,
-      "hotelid": "",
-      "checkInDate": "",
-      "ckeckOutDate": "",
-      "free": true
-    }
-  ]
+    "newuser": [
+        {
+            "name": "Chukwuebuka Anyadiegwu",
+            "password": "12345",
+            "email": "chubukass@gmail.com",
+            "isDeleted": "false",
+            "id": 5
+        },
+        {
+            "name": "daile",
+            "password": "12345",
+            "email": "chu@gmail.com",
+            "isDeleted": "false",
+            "id": 6
+        }
+    ],
+    "hotels": [
+        {
+            "hotelName": "good",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "Enugu",
+            "hotelstate": "Enugu",
+            "price": 25000,
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Security"
+            ],
+            "aboutHotel": "it is good",
+            "id": 2
+        },
+        {
+            "hotelName": "looking",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "Enugu",
+            "hotelstate": "Enugu",
+            "price": 35000,
+            "picture1": "./pictures/images3.jpg",
+            "picture2": "./pictures/hotel1.jpg",
+            "picture3": "./pictures/images4.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Restaurant",
+                "Security",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "great",
+            "id": 3
+        },
+        {
+            "hotelName": "geat",
+            "hotelAddress": "Ada George, Portharcourt, River State, Ada George",
+            "hotelarea": "Portharcourt",
+            "hotelstate": "River State",
+            "price": 45000,
+            "picture1": "./pictures/images7.jpg",
+            "picture2": "./pictures/images8.jpg",
+            "picture3": "./pictures/images10.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Security",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "ok",
+            "id": 4
+        },
+        {
+            "hotelName": "came",
+            "hotelAddress": "adddress",
+            "hotelarea": "lekki",
+            "hotelstate": "Lagos",
+            "picture1": "./pictures/images4.jpg",
+            "picture2": "./pictures/images6.jpg",
+            "picture3": "./pictures/images9.jpg",
+            "hotelInformation": [
+                "Security",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it has been awauo",
+            "id": 5
+        },
+        {
+            "hotelName": "angle hotel",
+            "hotelAddress": "11 ada loove",
+            "hotelarea": "isolo",
+            "hotelstate": "lagos",
+            "price": "1500",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images4.jpg",
+            "picture3": "./pictures/images7.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Restaurant",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "it has been good",
+            "id": 6
+        }
+    ],
+    "bookings": [
+        {
+            "id": 1,
+            "hotelid": "",
+            "checkInDate": "",
+            "ckeckOutDate": "",
+            "free": true
+        }
+    ]
 }

@@ -12,7 +12,7 @@ const loginServer = (link, input) => {
           element.password == input.password
         ) {
           alert(`Welcome ${element.name}`);
-          document.location = "../registerHotel.html?name=" + element.name;
+          document.location = "../registerHotel.html?name=" + element.email;
         } else {
           alert(`Incorrect Password Or Email`);
           input.password = " ";

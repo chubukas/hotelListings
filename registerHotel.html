@@ -43,6 +43,7 @@
 
     <section class="resgisterForm">
       <h3>INPUT HOTEL DETAILS HERE</h3>
+      <span> <a href="myHotels.html">Update Hotels</a> </span>
       <form id="hotelForm">
         <div class="form-group">
           <label for="hotelname">Hotel Name : </label>
@@ -104,6 +105,7 @@
             <option value="./pictures/images9.jpg">picture9</option>
             <option value="./pictures/images10.jpg">picture10</option>
           </select>
+          <input type="type" name="" id="hidenemail" />
         </div>
         <button class="btn btn-success" type="submit">
           <i class="fas fa-message"></i> Send
@@ -117,20 +119,23 @@
       let split = url.split("");
 
       let inde = split.indexOf("=");
-      let index = split.indexOf("%");
-      let name = split.slice(inde + 1, index).join("");
+      // let index = split.indexOf("%");
+      let name = split.slice(inde + 1).join("");
 
       registeredUser.innerHTML = `Welcome ${name}`;
 
       if (url == "") {
         document.location = "index.html";
       }
+
+      let hidemail = document.getElementById("hidenemail");
+      hidemail.value = name;
     </script>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <!-- <script src="./js/login.js"></script> -->
+    <script src="./js/login.js"></script>
     <script src="./js/hotel.js"></script>
   </body>
 </html>

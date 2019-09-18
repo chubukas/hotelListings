@@ -1,4 +1,4 @@
-const showServer = (link, rowDeals, rowOne, rowTwo) => {
+const showServer = (link, rowDeals, rowOne) => {
   $.ajax({
     method: "GET",
     url: link,
@@ -45,10 +45,8 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
 $(document).ready(function() {
   let rowDeals = $("#deals");
   let rowOne = $("#popular-first-row");
-  let rowTwo = $("popular-second-row");
 
   const link = "http://localhost:3000/hotels";
 
-  showServer(link, rowDeals, rowOne, rowTwo);
+  showServer(link, rowDeals, rowOne);
 });
-// });

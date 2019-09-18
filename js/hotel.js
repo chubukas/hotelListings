@@ -5,44 +5,12 @@ const postServers = (link, data) => {
     method: "POST",
     url: link,
     data: data,
-    success: function(result) {
-      //   console.log(result);
-    },
+    success: function(result) {},
     error: function(error) {
       console.log(error);
     }
   });
 };
-
-// function loginServers (input) {
-//   $.ajax({
-//     method: "GET",
-//     url: "http://localhost:3000/hotels",
-//     success: function(result) {
-//       for (let index = 0; index < result.length; index++) {
-//         const element = result[index];
-
-//         for (let i = 0; i < element.length; i++) {
-//           const item = element[i];
-//           console.log(item);
-
-//           if (item.hotelid == input) {
-//             console.log(`item.hotelid is ${item.hotelid}`);
-
-//             return Math.floor(Math.random() * 1000000)
-//               .toString()
-//               .concat("yht");
-//           } else {
-//             return input;
-//           }
-//         }
-//       }
-//     },
-//     error: function(error) {
-//       console.log(error);
-//     }
-//   });
-// };
 
 $(document).ready(function() {
   $("#hotelForm").on("submit", function(e) {
@@ -56,16 +24,12 @@ $(document).ready(function() {
     let price = $.trim($("#hotelprice").val());
     let hotelarea = $.trim($("#hotelarea").val());
     let hotelstate = $.trim($("#hotelstate").val());
-    let hotelid = Math.floor(Math.random() * 1000000)
-      .toString()
-      .concat("yht");
 
     let picture1 = pics[0];
     let picture2 = pics[1];
     let picture3 = pics[2];
 
     const data = {
-      hotelid,
       hotelName,
       hotelAddress,
       hotelarea,
