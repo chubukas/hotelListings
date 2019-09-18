@@ -1,48 +1,123 @@
 {
-    "newuser": [
-        {
-            "name": "Chukwuebuka Anyadiegwu",
-            "password": "12345",
-            "email": "chubukass@gmail.com",
-            "isDeleted": "false",
-            "id": 5
-        },
-        {
-            "name": "daile",
-            "password": "12345",
-            "email": "chu@gmail.com",
-            "isDeleted": "false",
-            "id": 6
-        }
-    ],
-    "hotels": [
-        {
-            "id": 1,
-            "hotelid": "",
-            "hotelName": "",
-            "hotelAddress": "",
-            "pictures": [
-                {
-                    "picture1": "",
-                    "picture2": "",
-                    "picture3": ""
-                }
-            ],
-            "hotelInformation": [
-                {
-                    "facility": [],
-                    "about": ""
-                }
-            ]
-        }
-    ],
-    "bookings": [
-        {
-            "id": 1,
-            "hotelid": "",
-            "checkInDate": "",
-            "ckeckOutDate": "",
-            "free": true
-        }
-    ]
+  "newuser": [
+    {
+      "name": "Chukwuebuka Anyadiegwu",
+      "password": "12345",
+      "email": "chubukass@gmail.com",
+      "isDeleted": "false",
+      "id": 5
+    },
+    {
+      "name": "daile",
+      "password": "12345",
+      "email": "chu@gmail.com",
+      "isDeleted": "false",
+      "id": 6
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "hotelid": "",
+      "hotelName": "",
+      "hotelAddress": "",
+      "pictures": {
+        "picture1": "",
+        "picture2": "",
+        "picture3": ""
+      },
+      "hotelInformation": {
+        "facility": [],
+        "about": ""
+      }
+    },
+    {
+      "hotelName": "looking",
+      "hotelAddress": "logoa",
+      "pictures[picture1]": "./pictures/hotel2",
+      "pictures[picture2]": "./pictures/hotel3",
+      "pictures[picture3]": "./pictures/hotel4",
+      "hotelInformation[facility][]": [
+        "Bar/Lounge",
+        "Restaurant",
+        "Security"
+      ],
+      "hotelInformation[about]": "",
+      "id": 6
+    },
+    {
+      "hotelName": "came",
+      "hotelAddress": "imo",
+      "pictures[picture1]": "./pictures/hotel2",
+      "pictures[picture2]": "./pictures/hotel3",
+      "hotelInformation[facility][]": [
+        "Restaurant",
+        "Wireless Internet"
+      ],
+      "hotelInformation[about]": "",
+      "id": 7
+    },
+    {
+      "hotelName": "good",
+      "hotelAddress": "jos",
+      "pictures[picture1]": "./pictures/hotel1",
+      "pictures[picture2]": "./pictures/hotel4",
+      "hotelInformation[facility][]": [
+        "Restaurant",
+        "Security",
+        "Wireless Internet"
+      ],
+      "hotelInformation[about]": "",
+      "id": 8
+    },
+    {
+      "hotelName": "coming",
+      "hotelAddress": "imo",
+      "pictures[picture1]": "./pictures/hotel2",
+      "pictures[picture2]": "./pictures/hotel3",
+      "pictures[picture3]": "./pictures/hotel4",
+      "hotelInformation[facility][]": [
+        "Restaurant",
+        "Security",
+        "Wireless Internet"
+      ],
+      "hotelInformation[about]": "",
+      "id": 9
+    },
+    {
+      "hotelid": "917643yht",
+      "hotelName": "going",
+      "hotelAddress": "jos",
+      "pictures[picture1]": "./pictures/hotel2",
+      "pictures[picture2]": "./pictures/hotel4",
+      "hotelInformation[facility][]": [
+        "Bar/Lounge",
+        "Wireless Internet"
+      ],
+      "hotelInformation[about]": "",
+      "id": 10
+    },
+    {
+      "hotelid": "189963yht",
+      "hotelName": "ok",
+      "hotelAddress": "ok",
+      "pictures[picture1]": "./pictures/hotel1",
+      "pictures[picture2]": "./pictures/hotel4",
+      "hotelInformation[facility][]": [
+        "Bar/Lounge",
+        "Wireless Internet"
+      ],
+      "hotelInformation[about]": "ok",
+      "id": 11
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "hotelid": "",
+      "checkInDate": "",
+      "ckeckOutDate": "",
+      "free": true
+    }
+  ]
 }
