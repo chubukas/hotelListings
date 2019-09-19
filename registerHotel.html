@@ -165,12 +165,37 @@
       let registeredUser = document.getElementById("registeredUser");
       let url = document.location.search;
       let split = url.split("");
-
       let inde = split.indexOf("=");
-      // let index = split.indexOf("%");
       let name = split.slice(inde + 1).join("");
-
       registeredUser.innerHTML = `Welcome ${name}`;
+
+      const cusemail = () => {
+        $.ajax({
+          method: "GET",
+          url: "http://localhost:3000/newuser",
+          success: function(result) {
+            console.log(result);
+            for (let index = 0; index < result.length; index++) {
+              const element = result[index];
+
+              if (
+                element.email == input.email &&
+                element.password == input.password
+              ) {
+                alert(`Welcome ${element.name}`);
+                document.location =
+                  "../registerHotel.html?name=" + element.email;
+              } else {
+                alert(`Incorrect Password Or Email`);
+                input = " ";
+              }
+            }
+          },
+          error: function(error) {
+            console.log(error);
+          }
+        });
+      };
 
       if (url == "") {
         document.location = "index.html";

@@ -15,8 +15,7 @@ const loginServer = (link, input) => {
           document.location = "../registerHotel.html?name=" + element.email;
         } else {
           alert(`Incorrect Password Or Email`);
-          input.password = " ";
-          input.email = " ";
+          input = " ";
         }
       }
     },
