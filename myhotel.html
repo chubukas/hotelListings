@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>yourhotels.com</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container ">
+          <a class="navbar-brand logo" href="index.html">
+            yourhotels.com
+          </a>
+          <div class="ml-10" id="registeredUser"></div>
+
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pt-2 px-2" id="call">
+                <i class="fas fa-phone-square"></i>
+                call us : +2348066702567
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--END OF HEADER-->
+
+    <section>
+      <div class="container my-5">
+        <div class="row" id="myhotels"></div>
+      </div>
+    </section>
+    <input type="text" name="" id="hidemail" hidden />
+    <script>
+      let url = document.location.search;
+      let split = url.split("");
+
+      let inde = split.indexOf("=");
+      // let index = split.indexOf("%");
+      let name = split.slice(inde + 1).join("");
+
+      registeredUser.innerHTML = `UPDATE OR DELETE YOUR HOTEL`;
+
+      if (url == "") {
+        document.location = "index.html";
+      }
+
+      let hidemail = document.getElementById("hidemail");
+      hidemail.value = name;
+    </script>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/myhotel.js"></script>
+  </body>
+</html>

@@ -15,7 +15,6 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
           fac += `<div class="col-md-3">${e}</div>`;
         }
         return fac;
-        console.log(fac);
       }
       for (const key in result) {
         const element = result[key];
@@ -78,7 +77,7 @@ $(document).ready(function() {
   let thelink = mylink(split);
 
   const link = `http://localhost:3000/hotels?id=${thelink}`;
-  console.log(link);
+//   console.log(link);
 
   showServer(link, rowDeals, rowOne, rowTwo);
 });

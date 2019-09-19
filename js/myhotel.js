@@ -1,61 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>yourhotels.com</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/fontawesome.min.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <div class="container ">
-          <a class="navbar-brand logo" href="index.html">
-            yourhotels.com
-          </a>
-          <div class="ml-10" id="registeredUser"></div>
+const showServer = (link, myhotels) => {
+  $.ajax({
+    method: "GET",
+    url: link,
+    success: function(result) {
+      let myData = "";
 
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#mynavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      for (const key in result) {
+        const element = result[key];
 
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item pt-2 px-2" id="call">
-                <i class="fas fa-phone-square"></i>
-                call us : +2348066702567
-              </li>
-            </ul>
+        myData += `<div class="col-md-3">
+          <div class='card mt-2'>
+            <img class="card-img deal" src="${element.picture1}" alt="" />
+            <div class="card-img-overlay">
+              "<p class="overlay-price">45%<i>off</i></p>
+            </div>
           </div>
+          <div class="card-body">
+            <a class="card-link" href="hotel.html?id=${element.id}"><b> ${element.hotelName}</b></a>
+            <small><p> ${element.hotelarea} , ${element.hotelstate}</p></small>
+           <button class ="btn btn-primary" data-toggle="modal" data-target="#myModal">Update</button>
+           <span> <button class ="btn btn-danger">Delete</button> </span>
+          </div>
+          </div>
+          
+          <!--888888888888888888888888888 START OF Modal 888888888888888888888888-->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Update Your Hotel</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-      </nav>
-    </section>
-    <!--END OF HEADER-->
-
-    <section class="resgisterForm">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h3>INPUT HOTEL DETAILS HERE</h3>
-          </div>
-          <div class="col-md-4">
-            <h4>
-              <a id="updatelink"><i></i> Update Hotels / Delete</a>
-            </h4>
-          </div>
-        </div>
-      </div>
-
-      <form id="hotelForm">
+        <div class="modal-body">
+        <form id="hotelForm">
         <div class="form-row">
           <div class="col-md-6">
             <div class="form-group">
@@ -153,40 +132,88 @@
             <option value="./pictures/images9.jpg">picture9</option>
             <option value="./pictures/images10.jpg">picture10</option>
           </select>
-          <input type="type" name="" id="hidenemail" hidden />
+          <input type="type" name="" id="hidenid" value="${element.id}" />
         </div>
         <button class="btn btn-success" type="submit">
           <i class="fas fa-message"></i> Send
         </button>
       </form>
-    </section>
-
-    <script>
-      let registeredUser = document.getElementById("registeredUser");
-      let url = document.location.search;
-      let split = url.split("");
-
-      let inde = split.indexOf("=");
-      // let index = split.indexOf("%");
-      let name = split.slice(inde + 1).join("");
-
-      registeredUser.innerHTML = `Welcome ${name}`;
-
-      if (url == "") {
-        document.location = "index.html";
+                      </div>
+                  
+                  </div>
+              </div>
+          </div>
+          <!--888888888888888888888888888 END OF Modal 888888888888888888888888-->
+          
+          `;
+        myhotels.html(myData);
       }
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
+};
 
-      let hidemail = document.getElementById("hidenemail");
-      hidemail.value = name;
+$(document).ready(function() {
+  let myhotels = $("#myhotels");
 
-      let updatelink = document.getElementById("updatelink");
-      updatelink.setAttribute("href", "myhotel.html?email=" + name);
-    </script>
+  let hidemail = $("#hidemail").val();
 
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/hotel.js"></script>
-  </body>
-</html>
+  const link = `http://localhost:3000/hotels?email=${hidemail}`;
+  console.log(link);
+
+  showServer(link, myhotels);
+});
+
+// const postServers = (link, data) => {
+//   console.log(data);
+
+//   $.ajax({
+//     method: "POST",
+//     url: link,
+//     data: data,
+//     success: function(result) {},
+//     error: function(error) {
+//       console.log(error);
+//     }
+//   });
+// };
+
+// $(document).ready(function() {
+//   $("#hotelForm").on("submit", function(e) {
+//     e.preventDefault();
+
+//     let hotelName = document.getElementById("hotelname").value;
+//     let hotelAddress = document.getElementById("hoteladdress").value;
+//     let pics = $("#hotelpictures").val();
+//     let email = $("#hidenemail").val();
+//     let hotelInformation = $("#Hotelfacilities").val();
+//     let about = $.trim($("#aboutthehotel").val());
+//     let price = $.trim($("#hotelprice").val());
+//     let hotelarea = $.trim($("#hotelarea").val());
+//     let hotelstate = $.trim($("#hotelstate").val());
+//     let hidemail = $("#hidemail").val();
+
+//     let picture1 = pics[0];
+//     let picture2 = pics[1];
+//     let picture3 = pics[2];
+
+//     const data = {
+//       hotelName,
+//       hotelAddress,
+//       hotelarea,
+//       hotelstate,
+//       price,
+//       picture1,
+//       picture2,
+//       picture3,
+//       hotelInformation,
+//       aboutHotel: about
+//     };
+
+//     const link = `http://localhost:3000/hotels?email=${hidemail}`;
+
+//     postServers(link, data);
+//   });
+// });

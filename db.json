@@ -22,6 +22,7 @@
             "hotelarea": "Enugu",
             "hotelstate": "Enugu",
             "price": 25000,
+            "discountprice": "45%",
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images3.jpg",
             "hotelInformation": [
@@ -29,6 +30,7 @@
                 "Security"
             ],
             "aboutHotel": "it is good",
+            "email": "chubukass@gmail.com",
             "id": 2
         },
         {
@@ -47,6 +49,7 @@
                 "Wireless Internet"
             ],
             "aboutHotel": "great",
+            "email": "chubukass@gmail.com",
             "id": 3
         },
         {
@@ -55,6 +58,7 @@
             "hotelarea": "Portharcourt",
             "hotelstate": "River State",
             "price": 45000,
+            "discountprice": "45%",
             "picture1": "./pictures/images7.jpg",
             "picture2": "./pictures/images8.jpg",
             "picture3": "./pictures/images10.jpg",
@@ -64,6 +68,7 @@
                 "Wireless Internet"
             ],
             "aboutHotel": "ok",
+            "email": "chubukass@gmail.com",
             "id": 4
         },
         {
@@ -80,6 +85,7 @@
                 "Air Conditioning"
             ],
             "aboutHotel": "it has been awauo",
+            "email": "chu@gmail.com",
             "id": 5
         },
         {
@@ -88,6 +94,7 @@
             "hotelarea": "isolo",
             "hotelstate": "lagos",
             "price": "1500",
+            "discountprice": "45%",
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images4.jpg",
             "picture3": "./pictures/images7.jpg",
@@ -97,7 +104,65 @@
                 "Wireless Internet"
             ],
             "aboutHotel": "it has been good",
+            "email": "chu@gmail.com",
             "id": 6
+        },
+        {
+            "hotelName": "grate hotel",
+            "hotelAddress": "2 way road",
+            "hotelarea": "isoko way",
+            "hotelstate": "delta",
+            "price": "13000",
+            "discountprice": "45%",
+            "picture1": "./pictures/images2.jpg",
+            "picture2": "./pictures/images4.jpg",
+            "picture3": "./pictures/images7.jpg",
+            "hotelInformation": [
+                "Restaurant",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 7
+        },
+        {
+            "hotelName": "luke hotels",
+            "hotelAddress": "23 oloko road",
+            "hotelarea": "mile2",
+            "hotelstate": "lagos",
+            "price": "45000",
+            "discountprice": "12",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "picture3": "./pictures/images4.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Security",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 8
+        },
+        {
+            "hotelName": "came hotel",
+            "hotelAddress": "kokmo average roage",
+            "hotelarea": "mile4",
+            "hotelstate": "pH",
+            "price": "120000",
+            "discountprice": "35",
+            "picture1": "./pictures/images2.jpg",
+            "picture2": "./pictures/images6.jpg",
+            "picture3": "./pictures/images8.jpg",
+            "hotelInformation": [
+                "Security",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 9
         }
     ],
     "bookings": [

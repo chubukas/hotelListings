@@ -19,9 +19,11 @@ $(document).ready(function() {
     let hotelName = document.getElementById("hotelname").value;
     let hotelAddress = document.getElementById("hoteladdress").value;
     let pics = $("#hotelpictures").val();
+    let email = $("#hidenemail").val();
     let hotelInformation = $("#Hotelfacilities").val();
     let about = $.trim($("#aboutthehotel").val());
     let price = $.trim($("#hotelprice").val());
+    let discountprice = $.trim($("#discountprice").val());
     let hotelarea = $.trim($("#hotelarea").val());
     let hotelstate = $.trim($("#hotelstate").val());
 
@@ -35,11 +37,13 @@ $(document).ready(function() {
       hotelarea,
       hotelstate,
       price,
+      discountprice,
       picture1,
       picture2,
       picture3,
       hotelInformation,
-      aboutHotel: about
+      aboutHotel: about,
+      email
     };
 
     const link = "http://localhost:3000/hotels";
