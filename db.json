@@ -76,7 +76,7 @@
             "hotelAddress": "No 11 church street Housing estate",
             "hotelarea": "mile2",
             "hotelstate": "Enugu",
-            "price": "34000",
+            "price": 34000,
             "discountprice": "",
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images4.jpg",
@@ -95,12 +95,12 @@
             "hotelAddress": "12 fasdery",
             "hotelarea": "isoko way",
             "hotelstate": "edo",
-            "price": "13000",
+            "price": 13000,
             "discountprice": "",
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images3.jpg",
             "picture3": "./pictures/images9.jpg",
-            "hotelInformation[]": [
+            "hotelInformation": [
                 "Bar/Lounge",
                 "Wireless Internet",
                 "Air Conditioning"

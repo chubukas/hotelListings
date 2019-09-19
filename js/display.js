@@ -5,20 +5,28 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
     success: function(result) {
       console.log(result);
 
+      function names(params) {
+        if (params == "") {
+          return "";
+        } else {
+          return `<p class="overlay-price p-2">${params}%<i> discount</i></p>`;
+        }
+      }
+
       let fullData = "";
       let fac = "";
 
       function name(facilities) {
         for (let index = 0; index < facilities.length; index++) {
           const e = facilities[index];
-          console.log(e);
+
           fac += `<div class="col-md-3">${e}</div>`;
         }
         return fac;
       }
       for (const key in result) {
         const element = result[key];
-        //   console.log(element.hotelInformation);
+
         let facilities = element.hotelInformation;
 
         fullData += `
@@ -33,7 +41,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                 <h4> <span>&#8358;</span>${
                   element.price
                 } <small>avg/room</small></h4>
-                <p>${element.discountprice}% discount </p>
+                ${names(element.discountprice)}
             </div>
         </div>
     <div class="row">
