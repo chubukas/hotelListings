@@ -188,3 +188,8 @@
 #registeredUser {
   font-size: 2rem;
 }
+
+.about-text {
+  border: #bebab8 1px solid;
+  font-size: 16px;
+}

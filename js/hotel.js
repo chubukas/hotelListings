@@ -16,6 +16,14 @@ $(document).ready(function() {
   $("#hotelForm").on("submit", function(e) {
     e.preventDefault();
 
+    function dismyprice(disprice) {
+      if (disprice != "") {
+        return parseInt(disprice);
+      } else {
+        return "";
+      }
+    }
+
     let hotelName = document.getElementById("hotelname").value;
     let hotelAddress = document.getElementById("hoteladdress").value;
     let pics = $("#hotelpictures").val();
@@ -23,9 +31,13 @@ $(document).ready(function() {
     let hotelInformation = $("#Hotelfacilities").val();
     let about = $.trim($("#aboutthehotel").val());
     let price = $.trim($("#hotelprice").val());
-    let discountprice = $.trim($("#discountprice").val());
+    // let discountprice = $.trim($("#discountprice").val());
     let hotelarea = $.trim($("#hotelarea").val());
     let hotelstate = $.trim($("#hotelstate").val());
+    var disprice = $.trim($("#discountprice").val());
+
+    let discountprice = dismyprice(disprice);
+    price = parseInt(price);
 
     let picture1 = pics[0];
     let picture2 = pics[1];
