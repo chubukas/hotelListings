@@ -17,7 +17,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
       let fac = "";
 
       function name(facilities) {
-        for (let index = 0; index < facilities.length; index++) {
+        for (let index = 0; index < facilities + "[]".length; index++) {
           const e = facilities[index];
 
           fac += `<div class="col-md-3">${e}</div>`;
@@ -71,9 +71,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
     
     </div>
     
-    <div class="m-5 text-center">
-    <button class ="btn btn-primary mx-5 font-weight-bold" data-toggle="modal" data-target="#myModal">Update</button>
-    <span> <button class ="btn btn-danger mx-5 font-weight-bold" type=submit id="deletebtn" onclick='delet()'>Delete</button> </span>
+    
     
     </div>
 

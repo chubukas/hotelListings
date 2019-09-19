@@ -43,7 +43,7 @@
             "picture1": "./pictures/images2.jpg",
             "picture2": "./pictures/images4.jpg",
             "picture3": "./pictures/images7.jpg",
-            "hotelInformation": [
+            "hotelInformation[]": [
                 "Restaurant",
                 "Wireless Internet",
                 "Air Conditioning"
@@ -62,7 +62,7 @@
             "picture1": "./pictures/images2.jpg",
             "picture2": "./pictures/images6.jpg",
             "picture3": "./pictures/images8.jpg",
-            "hotelInformation": [
+            "hotelInformation[]": [
                 "Security",
                 "Wireless Internet",
                 "Air Conditioning"
@@ -81,7 +81,7 @@
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images4.jpg",
             "picture3": "./pictures/images10.jpg",
-            "hotelInformation": [
+            "hotelInformation[]": [
                 "Restaurant",
                 "Security",
                 "Wireless Internet"
@@ -100,7 +100,7 @@
             "picture1": "./pictures/hotel1.jpg",
             "picture2": "./pictures/images3.jpg",
             "picture3": "./pictures/images9.jpg",
-            "hotelInformation": [
+            "hotelInformation[]": [
                 "Bar/Lounge",
                 "Wireless Internet",
                 "Air Conditioning"
@@ -108,6 +108,25 @@
             "aboutHotel": "it is good",
             "email": "chubukass@gmail.com",
             "id": 11
+        },
+        {
+            "hotelName": "comed hotels",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "isoko way",
+            "hotelstate": "Nigeria — Enugu",
+            "price": "12000",
+            "discountprice": "23",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "picture3": "./pictures/images4.jpg",
+            "hotelInformation[]": [
+                "Bar/Lounge",
+                "Restaurant",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 12
         }
     ],
     "bookings": [

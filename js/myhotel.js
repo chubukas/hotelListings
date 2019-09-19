@@ -27,11 +27,11 @@ const showServer = (link, myhotels) => {
             </div>
           </div>
           <div class="card-body">
-            <a class="card-link" href="hotel.html?id=${element.id}"><b> ${
-          element.hotelName
-        }</b></a>
+           <b> ${element.hotelName}</b>
             <small><p> ${element.hotelarea} , ${element.hotelstate}</p></small>
-          
+          <button class ="btn btn-secondary"> <a class="card-link" href="cushostel.html?id=${
+            element.id
+          }">Delete / Update</a></button>
           </div>
           </div>
   
