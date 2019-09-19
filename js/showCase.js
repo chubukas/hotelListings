@@ -22,18 +22,6 @@ const showServer = (link, rowDeals, rowOne) => {
         </div>
         </div>`;
         rowDeals.html(myData);
-
-        // allData += `<div class="col-md-3">
-        //     <div class='card'>
-        //       <img class="card-img deal" src="${element.picture1}" alt="" />
-        //     </div>
-        //     <div class="card-body">
-        //     <a class="card-link" href=hotel.html?id=${element.id}"> <b> ${element.hotelName}</b></a>
-        //     <small><p> ${element.hotelarea} , ${element.hotelstate}</p></small>
-        //     </div>
-        //     </div>`;
-
-        // rowOne.html(allData);
       }
     },
     error: function(error) {
@@ -51,20 +39,6 @@ const secoundShowServer = (link, rowOne) => {
 
       for (const key in result) {
         const element = result[key];
-
-        // myData += `<div class="col-md-3">
-        //   <div class='card'>
-        //     <img class="card-img deal" src="${element.picture1}" alt="" />
-        //     <div class="card-img-overlay">
-        //       "<p class="overlay-price">${element.discountprice}%<i> off</i></p>
-        //     </div>
-        //   </div>
-        //   <div class="card-body">
-        //     <a class="card-link" href="hotel.html?id=${element.id}"><b> ${element.hotelName}</b></a>
-        //     <small><p> ${element.hotelarea} , ${element.hotelstate}</p></small>
-        //   </div>
-        //   </div>`;
-        // rowDeals.html(myData);
 
         allData += `<div class="col-md-3">
               <div class='card'>

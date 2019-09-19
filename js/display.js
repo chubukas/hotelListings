@@ -65,7 +65,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
     
     <div class="m-5 text-center">
     <button class ="btn btn-primary mx-5 font-weight-bold" data-toggle="modal" data-target="#myModal">Update</button>
-    <span> <button class ="btn btn-danger mx-5 font-weight-bold" id="deletebtn">Delete</button> </span>
+    <span> <button class ="btn btn-danger mx-5 font-weight-bold" type=submit id="deletebtn" onclick='delet()'>Delete</button> </span>
     
     </div>
 
@@ -81,12 +81,14 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-            <form id="updateform">
+            <form id="updateform" onsubmit='updated();return false'>
             <div class="form-row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="hotelname">Hotel Name : </label>
-                  <input type="text" class="form-control" name="" id="hotelname" />
+                  <input type="text" class="form-control" value="${
+                    element.hotelName
+                  }" id="hotelname" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -95,7 +97,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                   <input
                     type="text"
                     class="form-control"
-                    name=""
+                    value="${element.hotelAddress}"
                     id="hoteladdress"
                   />
                 </div>
@@ -105,13 +107,17 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="hotelarea">Hotel Area : </label>
-                  <input type="text" class="form-control" name="" id="hotelarea" />
+                  <input type="text" class="form-control" value="${
+                    element.hotelarea
+                  }" id="hotelarea" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="hotelstate">Hotel State : </label>
-                  <input type="text" class="form-control" name="" id="hotelstate" />
+                  <input type="text" class="form-control" value=" ${
+                    element.hotelstate
+                  }"/>
                 </div>
               </div>
             </div>
@@ -122,7 +128,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                   <input
                     type="number"
                     class="form-control"
-                    name=""
+                    value="${element.price}"
                     id="hotelprice"
                   />
                 </div>
@@ -133,7 +139,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                   <input
                     type="number"
                     class="form-control"
-                    name=""
+                    value="${element.discountprice}"
                     id="discountprice"
                   />
                 </div>
@@ -147,7 +153,7 @@ const showServer = (link, rowDeals, rowOne, rowTwo) => {
                 id="aboutthehotel"
                 cols="30"
                 rows="3"
-              ></textarea>
+              >${element.aboutHotel}</textarea>
             </div>
             <div class="form-group">
               <label for="Hotelfacilities">Hotel Facilities : </label>
@@ -248,52 +254,52 @@ const putServers = (link, data) => {
   });
 };
 
-$(document).ready(function() {
-  $("#updateform").on("submit", function(e) {
-    e.preventDefault();
+// $("#updateform").on("submit", function(e) {
+//   e.preventDefault();
+function updated() {
+  alert();
+  let hotelName = document.getElementById("hotelname").value;
+  let hotelAddress = document.getElementById("hoteladdress").value;
+  let pics = $("#hotelpictures").val();
+  // let email = $("#hidenemail").val();
+  let hotelInformation = $("#Hotelfacilities").val();
+  let about = $.trim($("#aboutthehotel").val());
+  let price = $.trim($("#hotelprice").val());
+  let hotelarea = $.trim($("#hotelarea").val());
+  let hotelstate = $.trim($("#hotelstate").val());
+  let hidenid = $("#hidenid").val();
 
-    let hotelName = document.getElementById("hotelname").value;
-    let hotelAddress = document.getElementById("hoteladdress").value;
-    let pics = $("#hotelpictures").val();
-    // let email = $("#hidenemail").val();
-    let hotelInformation = $("#Hotelfacilities").val();
-    let about = $.trim($("#aboutthehotel").val());
-    let price = $.trim($("#hotelprice").val());
-    let hotelarea = $.trim($("#hotelarea").val());
-    let hotelstate = $.trim($("#hotelstate").val());
-    let hidenid = $("#hidenid").val();
+  let picture1 = pics[0];
+  let picture2 = pics[1];
+  let picture3 = pics[2];
 
-    let picture1 = pics[0];
-    let picture2 = pics[1];
-    let picture3 = pics[2];
+  const data = {
+    hotelName,
+    hotelAddress,
+    hotelarea,
+    hotelstate,
+    price,
+    picture1,
+    picture2,
+    picture3,
+    hotelInformation,
+    aboutHotel: about
+  };
+  console.log("comeing");
+  let url = document.location.search;
+  let split = url.split("");
 
-    const data = {
-      hotelName,
-      hotelAddress,
-      hotelarea,
-      hotelstate,
-      price,
-      picture1,
-      picture2,
-      picture3,
-      hotelInformation,
-      aboutHotel: about
-    };
-    console.log("comeing");
+  let thelinks = mylink(split);
+  console.log(hidenid);
+  const links = `http://localhost:3000/hotels/${thelinks}`;
+  console.log(links);
 
-    let thelinks = mylink(split);
-    console.log(thelinks);
-    const links = `http://localhost:3000/hotels?id=${thelinks}`;
-    console.log(links);
-
-    putServers(links, data);
-  });
-});
+  putServers(links, data);
+}
+// });
 
 //// DELETE DATA
 const deleteServers = (link, data) => {
-  console.log(data);
-
   $.ajax({
     method: "DELETE",
     url: link,
@@ -304,13 +310,14 @@ const deleteServers = (link, data) => {
   });
 };
 
-$(document).ready(function() {
-  $("#deletebtn").on("click", function(e) {
-    let thelinks = mylink(split);
-    console.log(thelinks);
-    const links = `http://localhost:3000/hotels?id=${thelinks}`;
-    console.log(links);
+function delet() {
+  let url = document.location.search;
+  let split = url.split("");
+  let thelinks = mylink(split);
+  console.log(thelinks);
+  const links = `http://localhost:3000/hotels/${thelinks}`;
 
-    deleteServers(links);
-  });
-});
+  deleteServers(links);
+  alert(`Your Hotel has been deleted`);
+  document.location = "../index.html";
+}
