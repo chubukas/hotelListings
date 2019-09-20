@@ -32,7 +32,7 @@
       rgba(41, 41, 41, 0.5),
       rgba(88, 88, 88, 0.001)
     ),
-    url("../pictures/bg.jpg");
+    url("../pictures/hero.jpg");
   text-align: center;
   background-size: 100% 100%;
 }
@@ -135,4 +135,61 @@
 
 .popular-first-row {
   margin-bottom: 30px;
+}
+
+#loginmodal {
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.692);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+#registermodal {
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.692);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+#registerlink {
+  color: blue;
+  cursor: pointer;
+}
+
+.resgisterForm {
+  text-align: center;
+}
+
+#hotelForm {
+  display: inline-block;
+  border: 1px solid #bebab8;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+#registeredUser {
+  font-size: 2rem;
+}
+
+.about-text {
+  border: #bebab8 1px solid;
+  font-size: 16px;
 }

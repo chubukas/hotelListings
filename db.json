@@ -1,0 +1,141 @@
+{
+    "newuser": [
+        {
+            "name": "Chukwuebuka Anyadiegwu",
+            "password": "12345",
+            "email": "chubukass@gmail.com",
+            "isDeleted": "false",
+            "id": 5
+        },
+        {
+            "name": "daile",
+            "password": "12345",
+            "email": "chu@gmail.com",
+            "isDeleted": "false",
+            "id": 6
+        }
+    ],
+    "hotels": [
+        {
+            "hotelName": "good",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "Enugu",
+            "hotelstate": "Enugu",
+            "price": 25000,
+            "discountprice": "",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "hotelInformation": [
+                "Bar/Lounge",
+                "Security"
+            ],
+            "aboutHotel": "it is good",
+            "email": "chubukass@gmail.com",
+            "id": 2
+        },
+        {
+            "hotelName": "grate hotel",
+            "hotelAddress": "2 way road",
+            "hotelarea": "isoko way",
+            "hotelstate": "delta",
+            "price": 13000,
+            "discountprice": "45",
+            "picture1": "./pictures/images2.jpg",
+            "picture2": "./pictures/images4.jpg",
+            "picture3": "./pictures/images7.jpg",
+            "hotelInformation[]": [
+                "Restaurant",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 7
+        },
+        {
+            "hotelName": "came hotel",
+            "hotelAddress": "kokmo average roage",
+            "hotelarea": "mile4",
+            "hotelstate": "pH",
+            "price": 120000,
+            "discountprice": "35",
+            "picture1": "./pictures/images2.jpg",
+            "picture2": "./pictures/images6.jpg",
+            "picture3": "./pictures/images8.jpg",
+            "hotelInformation[]": [
+                "Security",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 9
+        },
+        {
+            "hotelName": "good hotels",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "mile2",
+            "hotelstate": "Enugu",
+            "price": 34000,
+            "discountprice": "",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images4.jpg",
+            "picture3": "./pictures/images10.jpg",
+            "hotelInformation[]": [
+                "Restaurant",
+                "Security",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "defreded",
+            "email": "chubukass@gmail.com",
+            "id": 10
+        },
+        {
+            "hotelName": "fransis hotel",
+            "hotelAddress": "12 fasdery",
+            "hotelarea": "isoko way",
+            "hotelstate": "edo",
+            "price": 13000,
+            "discountprice": "",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "picture3": "./pictures/images9.jpg",
+            "hotelInformation[]": [
+                "Bar/Lounge",
+                "Wireless Internet",
+                "Air Conditioning"
+            ],
+            "aboutHotel": "it is good",
+            "email": "chubukass@gmail.com",
+            "id": 11
+        },
+        {
+            "hotelName": "comed hotels",
+            "hotelAddress": "No 11 church street Housing estate",
+            "hotelarea": "isoko way",
+            "hotelstate": "Nigeria — Enugu",
+            "price": "12000",
+            "discountprice": "23",
+            "picture1": "./pictures/hotel1.jpg",
+            "picture2": "./pictures/images3.jpg",
+            "picture3": "./pictures/images4.jpg",
+            "hotelInformation[]": [
+                "Bar/Lounge",
+                "Restaurant",
+                "Wireless Internet"
+            ],
+            "aboutHotel": "it has been good",
+            "email": "chubukass@gmail.com",
+            "id": 12
+        }
+    ],
+    "bookings": [
+        {
+            "id": 1,
+            "hotelid": "",
+            "checkInDate": "",
+            "ckeckOutDate": "",
+            "free": true
+        }
+    ]
+}
